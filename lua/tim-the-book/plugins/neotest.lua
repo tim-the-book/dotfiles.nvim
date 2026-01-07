@@ -34,7 +34,7 @@ return {
             end, { desc = 'Run tests in the current buffer' } )
 
             vim.keymap.set('n', '<leader>ts', function()
-                neotest.output.open({ enter = true, auto_close = true })
+                neotest.summary.toggle()
             end, { desc = 'Show test output' } )
 
         end,
