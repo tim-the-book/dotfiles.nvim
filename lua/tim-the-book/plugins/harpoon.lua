@@ -12,10 +12,10 @@ return {
 
 	-- Keybindings
 	vim.keymap.set('n', 'sa', function() harpoon:list():add() end)
-	vim.keymap.set('n', 'ss', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+	vim.keymap.set('n', 'sl', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 	
-	vim.keymap.set('n', '<C-k>', function() harpoon:list():prev() end)
-	vim.keymap.set('n', '<C-j>', function() harpoon:list():next() end)
+	vim.keymap.set('n', 'sk', function() harpoon:list():prev() end)
+	vim.keymap.set('n', 'sj', function() harpoon:list():next() end)
 	
 	vim.keymap.set('n', '<leader>1', function() harpoon:list():select(1) end)
 	vim.keymap.set('n', '<leader>2', function() harpoon:list():select(2) end)
