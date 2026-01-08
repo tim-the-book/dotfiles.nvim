@@ -14,6 +14,7 @@ return {
 			require 'mason-lspconfig'.setup {
 				ensure_installed = { 'ruff', 'basedpyright' },
 				automatic_installation = true,
+                automatic_enable = false,
 			}
 		end,
 	},
@@ -77,6 +78,9 @@ return {
                     },
                 }}}
 			})
+
+            -- Enable LSPs
+            vim.lsp.enable { 'basedpyright', 'ruff' } 
 		end
 	},
 }
